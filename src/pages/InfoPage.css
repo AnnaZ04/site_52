@@ -76,3 +76,30 @@
 .info-card a:hover {
   text-decoration: underline;
 }
+@media (max-width: 900px) {
+  .info-page__content {
+    padding: 48px 24px;
+  }
+
+  .info-page__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .info-page__content {
+    padding: 40px 16px;
+  }
+
+  .info-page__hero h1 {
+    font-size: 32px;
+  }
+
+  .info-page__hero p {
+    font-size: 16px;
+  }
+
+  .info-card {
+    padding: 24px;
+  }
+}

@@ -1,0 +1,141 @@
+.category-page {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.category-page__content {
+  padding: 56px;
+}
+
+.category-page__header {
+  margin-bottom: 36px;
+}
+
+.category-page__header span {
+  color: #7b8f5a;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.category-page__header h1 {
+  margin: 10px 0 0;
+  color: #2d2a26;
+  font-size: 40px;
+}
+
+.category-page__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.category-page__empty {
+  color: #6f665d;
+  font-size: 18px;
+}
+
+.product-card {
+  overflow: hidden;
+  border: 1px solid #e8e2d8;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.product-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.product-card__content {
+  padding: 20px;
+}
+
+.product-card__content span {
+  color: #7b8f5a;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.product-card__content h3 {
+  margin: 8px 0 18px;
+  color: #2d2a26;
+  font-size: 20px;
+}
+
+.product-card__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.product-card__bottom strong {
+  color: #2d2a26;
+  font-size: 20px;
+}
+
+.product-card__bottom button {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 12px;
+  background-color: #7b8f5a;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.product-card__bottom button:hover {
+  background-color: #667949;
+}
+
+.product-card__image-link {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .advantages-section__grid,
+  .category-page__grid,
+  .search-page__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .advantages-section,
+  .category-page__content,
+  .search-page__content {
+    padding: 42px 16px;
+  }
+
+  .advantages-section__grid,
+  .category-page__grid,
+  .search-page__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  .category-page__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .category-page__content {
+    padding: 42px 16px;
+  }
+
+  .category-page__header h1 {
+    font-size: 32px;
+  }
+
+  .category-page__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card img {
+    height: 220px;
+  }
+}

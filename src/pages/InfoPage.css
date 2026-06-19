@@ -1,0 +1,78 @@
+.info-page {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.info-page__content {
+  padding: 64px 56px;
+}
+
+.info-page__hero {
+  max-width: 900px;
+  margin-bottom: 48px;
+}
+
+.info-page__hero span {
+  color: #7b8f5a;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.info-page__hero h1 {
+  margin: 12px 0 18px;
+  color: #2d2a26;
+  font-size: 42px;
+  line-height: 1.15;
+}
+
+.info-page__hero p {
+  margin: 0;
+  color: #6f665d;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.info-page__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.info-card {
+  padding: 28px;
+  border: 1px solid #e8e2d8;
+  border-radius: 8px;
+  background-color: #faf8f5;
+}
+
+.info-card h2 {
+  margin: 0 0 12px;
+  color: #2d2a26;
+  font-size: 22px;
+}
+
+.info-card p {
+  margin: 0;
+  color: #6f665d;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.info-card h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-card a {
+  display: inline-block;
+  margin-top: 18px;
+  color: #7b8f5a;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.info-card a:hover {
+  text-decoration: underline;
+}

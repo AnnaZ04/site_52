@@ -1,0 +1,130 @@
+.hero-carousel {
+  position: relative;
+  min-height: 520px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 80px 96px;
+  color: #ffffff;
+}
+
+.hero-carousel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(45, 42, 38, 0.72),
+    rgba(45, 42, 38, 0.28),
+    rgba(45, 42, 38, 0.1)
+  );
+}
+
+.hero-carousel__content {
+  position: relative;
+  z-index: 1;
+  max-width: 560px;
+}
+
+.hero-carousel__content h1 {
+  margin: 0 0 18px;
+  font-size: 48px;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+.hero-carousel__content p {
+  margin: 0 0 28px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.hero-carousel__button {
+  position: absolute;
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.88);
+  color: #2d2a26;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.hero-carousel__button:hover {
+  background-color: #ffffff;
+}
+
+.hero-carousel__button--left {
+  left: 28px;
+}
+
+.hero-carousel__button--right {
+  right: 28px;
+}
+
+.hero-carousel__dots {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  bottom: 26px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.hero-carousel__dot {
+  width: 34px;
+  height: 4px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.45);
+  cursor: pointer;
+}
+
+.hero-carousel__dot--active {
+  background-color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .hero-carousel {
+    min-height: 460px;
+    padding: 70px 64px;
+  }
+
+  .hero-carousel__content h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-carousel {
+    min-height: 420px;
+    padding: 70px 42px;
+  }
+
+  .hero-carousel__content h1 {
+    font-size: 32px;
+  }
+
+  .hero-carousel__content p {
+    font-size: 16px;
+  }
+
+  .hero-carousel__button {
+    width: 38px;
+    height: 38px;
+  }
+
+  .hero-carousel__button--left {
+    left: 12px;
+  }
+
+  .hero-carousel__button--right {
+    right: 12px;
+  }
+}

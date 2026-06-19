@@ -1,0 +1,34 @@
+.intro-section {
+  padding: 72px 56px;
+  background-color: #ffffff;
+}
+
+.intro-section__content {
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro-section__content span {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #7b8f5a;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.intro-section__content h2 {
+  margin: 0 0 20px;
+  color: #2d2a26;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.intro-section__content p {
+  margin: 0;
+  color: #6f665d;
+  font-size: 17px;
+  line-height: 1.8;
+}

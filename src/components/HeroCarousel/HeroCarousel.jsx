@@ -41,7 +41,7 @@ function HeroCarousel() {
 
     return (
         <section className='hero-carousel'
-                style={{background: `url(${slide.image})`}}
+                style={{backgroundImage: `url(${slide.image})`}}
         >
             <button
             className='hero-carousel__button hero-carousel__button--left'

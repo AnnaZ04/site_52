@@ -41,3 +41,26 @@
   line-height: 1.7;
 }
 
+@media (max-width: 768px) {
+  .why-choose {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .why-choose__image {
+    height: 190px;
+  }
+
+  .why-choose__content {
+    padding: 36px 20px;
+  }
+
+  .why-choose__content h2 {
+    font-size: 28px;
+  }
+
+  .why-choose__content p {
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+}

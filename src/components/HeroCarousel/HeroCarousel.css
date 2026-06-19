@@ -103,8 +103,8 @@
 
 @media (max-width: 768px) {
   .hero-carousel {
-    min-height: 420px;
-    padding: 70px 42px;
+    min-height: 320px;
+    padding: 48px 42px;
   }
 
   .hero-carousel__content h1 {
@@ -126,5 +126,30 @@
 
   .hero-carousel__button--right {
     right: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-carousel {
+    min-height: 280px;
+    padding: 40px 42px;
+  }
+
+  .hero-carousel__content h1 {
+    font-size: 27px;
+  }
+
+  .hero-carousel__content p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .hero-carousel__button {
+    width: 34px;
+    height: 34px;
+  }
+
+  .hero-carousel__dots {
+    bottom: 16px;
   }
 }

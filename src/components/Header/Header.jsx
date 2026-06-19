@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom'
-import { Search, Phone, Clock, ShoppingCart, User } from 'lucide-react'
+import { Search, Phone, Clock, ShoppingCart, User, Menu, X} from 'lucide-react'
 import { useSelector, useDispatch } from 'react-redux'
 import { useState } from 'react'
 import { logout } from '../../features/auth/authSlice'
@@ -11,6 +11,8 @@ function Header() {
 
   const [searchValue, setSearchValue] = useState('')
   const navigate = useNavigate()
+
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const handleSearchSubmit = (event) => {
     event.preventDefault()
@@ -34,7 +36,25 @@ function Header() {
         </div>
       </Link>
 
-      <div className="header__content">
+      <Link to="/cart" className="header__mobile-cart">
+        <ShoppingCart size={21} />
+        <span>{cartCount}</span>
+      </Link>
+
+      <button
+        type="button"
+        className="header__mobile-menu-button"
+        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        aria-label="Ouvrir le menu"
+        aria-expanded={isMobileMenuOpen}
+      >
+        {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+      </button>
+
+      <div className={`header__content ${
+        isMobileMenuOpen ? 'header__content--open' : ''
+      }`}
+      >
         <nav className="header__top-menu">
           <Link to="/sales">Promotions</Link>
           <Link to="/about">À propos</Link>

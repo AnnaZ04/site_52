@@ -13,3 +13,35 @@ button,
 input {
   font-family: inherit;
 }
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-page,
+.category-page,
+.product-page,
+.search-page,
+.cart-page,
+.orders-page,
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-page__content,
+.category-page__content,
+.product-page__content,
+.search-page__content,
+.cart-page__content,
+.orders-page__content,
+.auth-page__content {
+  flex: 1;
+}
+
+.footer {
+  margin-top: auto;
+}

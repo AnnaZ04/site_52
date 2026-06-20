@@ -2,6 +2,10 @@
 
 Maison Meuble is a responsive furniture e-commerce website built with React, Vite, and Redux Toolkit. The project allows users to browse furniture categories, view product details, search products, add items to the cart, and complete an order.
 
+## Live Demo
+
+[View Maison Meuble on Vercel](https://site-52-7jut.vercel.app)
+
 ## Features
 
 - Responsive homepage
@@ -27,6 +31,7 @@ Maison Meuble is a responsive furniture e-commerce website built with React, Vit
 - React Router DOM
 - Lucide React
 - CSS
+- Vercel
 
 ## Installation
 
@@ -63,7 +68,7 @@ src/
 
 ## Current Status
 
-The frontend is functional. Product data is currently stored locally in:
+The frontend is functional and deployed on Vercel. Product data is currently stored locally in:
 
 ```text
 src/shared/data/products.js
